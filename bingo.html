@@ -1,0 +1,217 @@
+<html>
+    <head>
+        <title>Bingo</title>
+    </head>
+    <body>
+        <h1 style="text-align: center; font-size: 56pt; color: red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SORTEIO</h1>
+        <table border="2" cellspacing="5" cellpadding="20" style="width: 100%;">
+            <tr>
+                <td align="center" style="background-color: blue; color: white; font-weight: bold; font-size: 22pt">B</td>
+                <td align="center" id="pec1">01</td>
+                <td align="center" id="pec2">02</td>
+                <td align="center" id="pec3">03</td>
+                <td align="center" id="pec4">04</td>
+                <td align="center" id="pec5">05</td>
+                <td align="center" id="pec6">06</td>
+                <td align="center" id="pec7">07</td>
+                <td align="center" id="pec8">08</td>
+                <td align="center" id="pec9">09</td>
+                <td align="center" id="pec10">10</td>
+                <td align="center" id="pec11">11</td>
+                <td align="center" id="pec12">12</td>
+                <td align="center" id="pec13">13</td>
+                <td align="center" id="pec14">14</td>
+                <td align="center" id="pec15">15</td>
+            </tr>
+            <tr>
+                <td align="center" align="center" style="background-color: blue; color: white; font-weight: bold; font-size: 22pt">I</td>
+                <td align="center" id="pec16">16</td>
+                <td align="center" id="pec17">17</td>
+                <td align="center" id="pec18">18</td>
+                <td align="center" id="pec19">19</td>
+                <td align="center" id="pec20">20</td>
+                <td align="center" id="pec21">21</td>
+                <td align="center" id="pec22">22</td>
+                <td align="center" id="pec23">23</td>
+                <td align="center" id="pec24">24</td>
+                <td align="center" id="pec25">25</td>
+                <td align="center" id="pec26">26</td>
+                <td align="center" id="pec27">27</td>
+                <td align="center" id="pec28">28</td>
+                <td align="center" id="pec29">29</td>
+                <td align="center" id="pec30">30</td>
+            </tr>
+            <tr>
+                <td align="center" align="center" style="background-color: blue; color: white; font-weight: bold; font-size: 22pt">N</td>
+                <td align="center" id="pec31">31</td>
+                <td align="center" id="pec32">32</td>
+                <td align="center" id="pec33">33</td>
+                <td align="center" id="pec34">34</td>
+                <td align="center" id="pec35">35</td>
+                <td align="center" id="pec36">36</td>
+                <td align="center" id="pec37">37</td>
+                <td align="center" id="pec38">38</td>
+                <td align="center" id="pec39">39</td>
+                <td align="center" id="pec40">40</td>
+                <td align="center" id="pec41">41</td>
+                <td align="center" id="pec42">42</td>
+                <td align="center" id="pec43">43</td>
+                <td align="center" id="pec44">44</td>
+                <td align="center" id="pec45">45</td>
+            </tr>
+            <tr>
+                <td align="center" align="center" style="background-color: blue; color: white; font-weight: bold; font-size: 22pt">G</td>
+                <td align="center" id="pec46">46</td>
+                <td align="center" id="pec47">47</td>
+                <td align="center" id="pec48">48</td>
+                <td align="center" id="pec49">49</td>
+                <td align="center" id="pec50">50</td>
+                <td align="center" id="pec51">51</td>
+                <td align="center" id="pec52">52</td>
+                <td align="center" id="pec53">53</td>
+                <td align="center" id="pec54">54</td>
+                <td align="center" id="pec55">55</td>
+                <td align="center" id="pec56">56</td>
+                <td align="center" id="pec57">57</td>
+                <td align="center" id="pec58">58</td>
+                <td align="center" id="pec59">59</td>
+                <td align="center" id="pec60">60</td>
+            </tr>
+            <tr>
+                <td align="center" align="center" style="background-color: blue; color: white; font-weight: bold; font-size: 22pt;">O</td>
+                <td align="center" id="pec61">61</td>
+                <td align="center" id="pec62">62</td>
+                <td align="center" id="pec63">63</td>
+                <td align="center" id="pec64">64</td>
+                <td align="center" id="pec65">65</td>
+                <td align="center" id="pec66">66</td>
+                <td align="center" id="pec67">67</td>
+                <td align="center" id="pec68">68</td>
+                <td align="center" id="pec69">69</td>
+                <td align="center" id="pec70">70</td>
+                <td align="center" id="pec71">71</td>
+                <td align="center" id="pec72">72</td>
+                <td align="center" id="pec73">73</td>
+                <td align="center" id="pec74">74</td>
+                <td align="center" id="pec75">75</td>
+            </tr>
+        </table>
+        <br/>
+        <input type="button" value="INICIAR BINGO" oncLick="iniciarBingo()" style="height: 50px; width: 200px; margin-right: 20px; background-color:purple; color: white; font-size: 14pt; font-weight: bold"/>
+        <input type="button" value="PROXIMA PEDRA" onclick="proximoNumero()" style="height: 50px; width: 200px; background-color: orange; font-size: 14pt; font-weight: bold;"/>        
+        <span id="ultimaPedra" style="text-align: right; float: right; font-size: 22pt;">Ultima Pedra:</span>
+        
+        <input id="numerosCartela" type="text" style="height: 50px; width: 600px;margin-left: 20px; font-size: 14pt;" placeholder="Digite os numeros ganhandores"> 
+        <input type="button" value="CONFERIR CARTELA" oncLick="conferirCartela()" style="height: 50px; width: 250px; background-color: red; color: white; font-size: 14pt; font-weight: bold;"/>
+        
+        <script>
+            var sorteados = [];
+            sorteados.push(0);
+
+            var sortearNumero = function(){
+                return Math.round(Math.random() * 75);
+            }
+
+            var validarSorteado = function(numero){
+                let achou = false;
+                for(let i = 0; i < sorteados.length; i++){
+                    if(numero == sorteados[i]){
+                        achou = true;
+                        break;
+                    }
+                }
+                return achou;
+            }
+
+            var pintarNumero = function(numero){
+                var peca = document.getElementById("pec"+numero);
+                if(peca != null){
+                    peca.style.color = "white";
+                    peca.style.backgroundColor = "green";
+                }
+            }
+
+            var pintarNumeroGanhador = function(numero){
+                var peca = document.getElementById("pec"+numero);
+                if(peca != null){
+                    peca.style.color = "white";
+                    peca.style.backgroundColor = "red";
+                }
+            }
+
+            var mostrarUltimaPedra = function(numero){
+                var ultimaPedra = document.getElementById("ultimaPedra");
+                ultimaPedra.textContent = "Ultima Pedra: " + numero;
+            }
+
+            var iniciarBingo = function(){
+                if(confirm("Todas as pedras sorteadas serão perdidas, deseja iniciar um novo bingo ?")){
+                    location.reload();
+                    localStorage.removeItem("sorteados");
+                    location.reload();
+                }
+            }
+
+            var recarregarBingo = function(){  
+                if (localStorage.getItem("sorteados") != null){           
+                    sorteados = localStorage.getItem("sorteados").split(",");
+                    numero = localStorage.getItem("numero");
+
+                    for(let i = 0; i < sorteados.length; i++){
+                        pintarNumero(sorteados[i]);
+                    }    
+                    
+                    mostrarUltimaPedra(numero);
+                }
+            }
+
+            var proximoNumero = function(){
+                if(sorteados.length < 76){
+                    let numero = sortearNumero();
+                    while(validarSorteado(numero)){
+                        numero = sortearNumero();
+                    }
+                    sorteados.push(numero);
+                    pintarNumero(numero);
+                    mostrarUltimaPedra(numero);                    
+                    localStorage.setItem("sorteados", sorteados);
+                    localStorage.setItem("numero",numero);
+                    
+                    alert("Número Sorteado: " + numero);
+                }else{
+                    alert("Ja sairam todas as pedras");
+                }                
+            }
+
+            var conferirCartela = function(){                                
+                let numeros = [];
+                numeros = document.getElementById("numerosCartela").value.split(",");
+                
+                let achou = false;
+                for(let i = 0; i < numeros.length; i++){
+                    achou = false;
+                    for(let j = 0; j < sorteados.length; j++){
+                        if(numeros[i] == sorteados[j]){
+                            achou = true;
+                            pintarNumeroGanhador(numeros[i]);
+                            break;
+                        }
+                    }
+
+                    if(achou == false){
+                        alert('Voce comeu bronha o numero ' + numeros[i] + " nao saiu !!!!");
+                        achou = false;
+                        recarregarBingo();
+                        break;
+                    }
+                }
+                if(achou == true){
+                    alert("PARABÉNS, VOCE BINGOU !!!!!!")  
+                }              
+            }
+
+            recarregarBingo();
+
+        </script>
+    </body>
+</html>
